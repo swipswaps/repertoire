@@ -19,7 +19,7 @@ release = "0.2.0"
 # -- General configuration
 
 extensions = [
-    # "sphinx_js",  # Broken atm, doesn't work with React
+    "sphinx_js",
     "sphinx.ext.autodoc",
     "sphinxcontrib.autohttp.flask",
     "sphinx_rtd_theme",
@@ -34,6 +34,7 @@ master_doc = "index"
 
 js_language = "typescript"
 js_source_path = "../frontend/src"
+jsdoc_config_path = "../frontend/tsconfig.json"
 
 # -- Configure autodoc
 
